@@ -13,5 +13,17 @@ namespace OnlineBanking.Controllers
         {
             return View();
         }
+        public ActionResult AddBranchManager() {
+
+            return View();
+        }
+        public ActionResult DeleteBranchManager() {
+
+            return View();
+        }
+        public ActionResult EditBranchManager() {
+
+            return View();
+        }
     }
 }

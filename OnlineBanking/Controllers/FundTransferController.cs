@@ -13,5 +13,14 @@ namespace OnlineBanking.Controllers
         {
             return View();
         }
+        public ActionResult Neft() {
+
+            return View();
+        }
+        public ActionResult Rtgs() {
+
+            return View();
+        }
+
     }
 }

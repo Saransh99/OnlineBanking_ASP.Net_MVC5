@@ -13,5 +13,14 @@ namespace OnlineBanking.Controllers
         {
             return View();
         }
+
+        public ActionResult AddBeneficiary() {
+
+            return View();
+        }
+        public ActionResult AccountStatement() {
+
+            return View();
+        }
     }
 }

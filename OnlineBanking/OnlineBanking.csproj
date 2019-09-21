@@ -272,12 +272,17 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Administrator\AddBranchManager.cshtml" />
+    <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\Administrator\DeleteBranchManager.cshtml" />
+    <Content Include="Views\Administrator\EditBranchManager.cshtml" />
+    <Content Include="Views\FundTransfer\Neft.cshtml" />
+    <Content Include="Views\FundTransfer\Rtgs.cshtml" />
+    <Content Include="Views\Customer\AddBeneficiary.cshtml" />
+    <Content Include="Views\Customer\AccountStatement.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Administrator\" />
-    <Folder Include="Views\Customer\" />
-    <Folder Include="Views\FundTransfer\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
