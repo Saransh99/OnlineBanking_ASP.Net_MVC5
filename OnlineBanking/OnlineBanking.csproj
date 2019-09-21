@@ -168,12 +168,49 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdministratorController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\FundTransferController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909211558297_AdministratorModelAdded.cs" />
+    <Compile Include="Migrations\201909211558297_AdministratorModelAdded.Designer.cs">
+      <DependentUpon>201909211558297_AdministratorModelAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909211621521_BeneficiaryModelAdded.cs" />
+    <Compile Include="Migrations\201909211621521_BeneficiaryModelAdded.Designer.cs">
+      <DependentUpon>201909211621521_BeneficiaryModelAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909211623388_CustomerModelAdded.cs" />
+    <Compile Include="Migrations\201909211623388_CustomerModelAdded.Designer.cs">
+      <DependentUpon>201909211623388_CustomerModelAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909211624245_CustomerModelAdded1.cs" />
+    <Compile Include="Migrations\201909211624245_CustomerModelAdded1.Designer.cs">
+      <DependentUpon>201909211624245_CustomerModelAdded1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909211626512_BranchManagerAdded.cs" />
+    <Compile Include="Migrations\201909211626512_BranchManagerAdded.Designer.cs">
+      <DependentUpon>201909211626512_BranchManagerAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909211629125_BranchInformation.cs" />
+    <Compile Include="Migrations\201909211629125_BranchInformation.Designer.cs">
+      <DependentUpon>201909211629125_BranchInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909211632412_AdminModelUpdated.cs" />
+    <Compile Include="Migrations\201909211632412_AdminModelUpdated.Designer.cs">
+      <DependentUpon>201909211632412_AdminModelUpdated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Administrator.cs" />
+    <Compile Include="Models\Beneficiary.cs" />
+    <Compile Include="Models\BranchInformation.cs" />
+    <Compile Include="Models\BranchManager.cs" />
+    <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -238,6 +275,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Administrator\" />
+    <Folder Include="Views\Customer\" />
+    <Folder Include="Views\FundTransfer\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -251,6 +291,29 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201909211558297_AdministratorModelAdded.resx">
+      <DependentUpon>201909211558297_AdministratorModelAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909211621521_BeneficiaryModelAdded.resx">
+      <DependentUpon>201909211621521_BeneficiaryModelAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909211623388_CustomerModelAdded.resx">
+      <DependentUpon>201909211623388_CustomerModelAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909211624245_CustomerModelAdded1.resx">
+      <DependentUpon>201909211624245_CustomerModelAdded1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909211626512_BranchManagerAdded.resx">
+      <DependentUpon>201909211626512_BranchManagerAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909211629125_BranchInformation.resx">
+      <DependentUpon>201909211629125_BranchInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909211632412_AdminModelUpdated.resx">
+      <DependentUpon>201909211632412_AdminModelUpdated.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

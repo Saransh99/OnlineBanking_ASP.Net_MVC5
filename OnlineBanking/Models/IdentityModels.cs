@@ -20,8 +20,15 @@ namespace OnlineBanking.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+
+        public DbSet<Administrator> Administrators { get; set; }
+        public DbSet<Beneficiary> Beneficiaries { get; set; }
+        public DbSet<Customer> Customers { get; set; }
+        public DbSet<BranchManager> BranchManagers { get; set; }
+        public DbSet<BranchInformation> BranchInformations { get; set; }
+
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("name=DefaultConnection", throwIfV1Schema: false)
         {
         }
 
